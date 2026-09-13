@@ -23,13 +23,10 @@ const PORTFOLIO_DATA = {
     areasOfInterest: [
       "Power Electronics",
       "Embedded Systems",
-      "Computer Vision",
-      "Microgrids",
       "Autonomous Systems",
       "Digital Signal Processing",
       "IoT",
-      "Robotics",
-      "Renewable Energy"
+      "Robotics"
     ]
   },
 
@@ -221,7 +218,7 @@ const PORTFOLIO_DATA = {
     power: {
       title: "Power & Energy Systems",
       icon: "zap",
-      skills: ["Power Electronics", "Power System Optimization", "Microgrids", "Renewable Energy", "Capacitor Bank Switching", "Phase Angle Correction"]
+      skills: ["Power Electronics", "Power System Optimization", "Capacitor Bank Switching", "Phase Angle Correction", "Dynamic APFC Panels"]
     },
     embedded: {
       title: "Embedded & Hardware",
@@ -285,6 +282,18 @@ const PORTFOLIO_DATA = {
       ]
     },
     {
+      role: "Public Relations Pillar Member",
+      organization: "Institution of Engineers Sri Lanka (IESL) Young Members Section",
+      location: "Moratuwa, Sri Lanka",
+      period: "2025 – Present",
+      type: "Professional Engineering Body",
+      description: "Executed digital outreach campaigns and coordinated event communication strategies for the student chapter.",
+      highlights: [
+        "Orchestrated cross-university engineering communication campaigns.",
+        "Promoted technical sessions and industry-academia networking initiatives."
+      ]
+    },
+    {
       role: "Active Member & Rotaractor Award Recipient",
       organization: "Rotaract Club of University of Moratuwa (Rotaract Mora)",
       location: "Moratuwa, Sri Lanka",
@@ -306,18 +315,6 @@ const PORTFOLIO_DATA = {
       highlights: [
         "Led creative direction and established comprehensive brand guidelines.",
         "Coordinated visual communication assets across digital media channels."
-      ]
-    },
-    {
-      role: "Public Relations Pillar Member",
-      organization: "Institution of Engineers Sri Lanka (IESL) Young Members Section",
-      location: "Moratuwa, Sri Lanka",
-      period: "2025 – Present",
-      type: "Professional Engineering Body",
-      description: "Executed digital outreach campaigns and coordinated event communication strategies for the student chapter.",
-      highlights: [
-        "Orchestrated cross-university engineering communication campaigns.",
-        "Promoted technical sessions and industry-academia networking initiatives."
       ]
     },
     {

@@ -2232,3 +2232,66 @@ img {
   flex-wrap: wrap;
   margin: 16px 0 24px 0;
 }
+
+/* Compact & Handy Contact Tiles */
+.contact-tile-compact {
+  padding: 12px 16px !important;
+  border-radius: var(--radius-sm) !important;
+}
+
+.contact-link-val {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.98rem;
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.contact-link-val:hover {
+  color: var(--accent-light);
+}
+
+/* Social Media Icon Bar */
+.contact-social-bar {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.social-bar-label {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.contact-social-icons-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-icon-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.social-icon-btn:hover {
+  color: #FFFFFF;
+  background: var(--accent-primary);
+  border-color: var(--border-bright);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.45);
+}
