@@ -2044,3 +2044,113 @@ img {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-deep);
 }
+
+/* ==========================================================================
+   ENHANCED RECRUITER SCANNABILITY & SCHEMATIC SYSTEM (OPTIMIZATION PASS)
+   ========================================================================== */
+
+/* Filter count badges */
+.filter-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(168, 85, 247, 0.25);
+  color: #FFFFFF;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 999px;
+  margin-left: 6px;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  transition: all var(--transition-fast);
+}
+
+.filter-btn.active .filter-badge {
+  background: #FFFFFF;
+  color: var(--accent-primary);
+  border-color: #FFFFFF;
+}
+
+/* Project Spec Sheet: Problem -> Solution -> Impact */
+.project-spec-sheet {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px 0 20px 0;
+  background: rgba(10, 7, 18, 0.65);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+}
+
+.spec-row {
+  display: grid;
+  grid-template-columns: 85px 1fr;
+  align-items: baseline;
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  .spec-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+.spec-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  user-select: none;
+}
+
+.spec-badge.problem {
+  background: rgba(239, 68, 68, 0.16);
+  color: #F87171;
+  border: 1px solid rgba(239, 68, 68, 0.35);
+}
+
+.spec-badge.solution {
+  background: rgba(56, 189, 248, 0.16);
+  color: #38BDF8;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+.spec-badge.impact {
+  background: rgba(52, 211, 153, 0.16);
+  color: #34D399;
+  border: 1px solid rgba(52, 211, 153, 0.35);
+}
+
+.spec-text {
+  font-size: 0.94rem;
+  color: var(--text-secondary);
+  line-height: 1.52;
+}
+
+/* Modal Architecture Diagram */
+.modal-diagram-container {
+  margin: 20px 0;
+  padding: 18px;
+  background: rgba(10, 7, 18, 0.95);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.modal-diagram-caption {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--accent-light);
+  font-weight: 700;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

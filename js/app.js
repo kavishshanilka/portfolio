@@ -144,6 +144,24 @@ function initModals() {
         <div class="modal-section-content">${project.modalDetails.solution}</div>
       </div>
 
+      ${project.architectureDiagram ? `
+      <div class="modal-section">
+        <div class="modal-section-title">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+          </svg>
+          System Architecture & Hardware Schematics
+        </div>
+        <div class="modal-diagram-container">
+          <div class="modal-diagram-caption">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            ${project.architectureCaption || 'HARDWARE & SIGNAL FLOW SCHEMATIC'}
+          </div>
+          ${project.architectureDiagram}
+        </div>
+      </div>
+      ` : ''}
+
       <div class="modal-section">
         <div class="modal-section-title">
           <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">

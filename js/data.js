@@ -38,6 +38,60 @@ const PORTFOLIO_DATA = {
     title: "GridGuard",
     subtitle: "Autonomous Edge-Coordinated Energy Management System",
     category: "iot-power",
+    architectureCaption: "DECOUPLED GRID LOAD-SHIFTING & DISAGGREGATION ARCHITECTURE",
+    architectureDiagram: `<svg viewBox="0 0 720 220" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto;">
+  <!-- Grid AC Input -->
+  <rect x="15" y="70" width="110" height="70" rx="8" fill="#151020" stroke="#7C3AED" stroke-width="2"/>
+  <text x="70" y="100" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="13" text-anchor="middle">230V AC Mains</text>
+  <text x="70" y="122" fill="#D8B4FE" font-family="monospace" font-size="11" text-anchor="middle">50 Hz Utility Supply</text>
+
+  <!-- Flow to Main DB -->
+  <line x1="125" y1="105" x2="165" y2="105" stroke="#A855F7" stroke-width="2.5"/>
+  <polygon points="165,100 175,105 165,110" fill="#A855F7"/>
+
+  <!-- Main DB Meter Node -->
+  <rect x="175" y="60" width="140" height="90" rx="8" fill="#1E1435" stroke="#A855F7" stroke-width="2.5"/>
+  <text x="245" y="90" fill="#38BDF8" font-family="sans-serif" font-weight="800" font-size="13" text-anchor="middle">PZEM-004T Meter</text>
+  <text x="245" y="112" fill="#FFFFFF" font-family="monospace" font-size="11" text-anchor="middle">Whole-DB Sensing</text>
+  <text x="245" y="132" fill="#94A3B8" font-family="monospace" font-size="10" text-anchor="middle">V, I, P, Power Factor</text>
+
+  <!-- Flow to Central Brain -->
+  <line x1="315" y1="105" x2="355" y2="105" stroke="#A855F7" stroke-width="2.5"/>
+  <polygon points="355,100 365,105 355,110" fill="#A855F7"/>
+
+  <!-- Raspberry Pi Central Hub -->
+  <rect x="365" y="30" width="170" height="150" rx="10" fill="#251648" stroke="#D8B4FE" stroke-width="2.5"/>
+  <text x="450" y="62" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="14" text-anchor="middle">Raspberry Pi Hub</text>
+  <text x="450" y="88" fill="#FBBF24" font-family="monospace" font-weight="700" font-size="11.5" text-anchor="middle">&#916;P Surge Detection</text>
+  <text x="450" y="112" fill="#38BDF8" font-family="monospace" font-size="11" text-anchor="middle">Peak Tariff Engine</text>
+  <text x="450" y="134" fill="#34D399" font-family="monospace" font-size="11" text-anchor="middle">LKR Cost Forecaster</text>
+  <text x="450" y="156" fill="#D8B4FE" font-family="monospace" font-size="10" text-anchor="middle">MQTT Broker / Web Host</text>
+
+  <!-- Flow Lines to Loads -->
+  <path d="M535 70 H575 V35 H595" stroke="#34D399" stroke-width="2.2"/>
+  <polygon points="595,30 605,35 595,40" fill="#34D399"/>
+
+  <path d="M535 105 H595" stroke="#FBBF24" stroke-width="2.2"/>
+  <polygon points="595,100 605,105 595,110" fill="#FBBF24"/>
+
+  <path d="M535 140 H575 V175 H595" stroke="#38BDF8" stroke-width="2.2"/>
+  <polygon points="595,170 605,175 595,180" fill="#38BDF8"/>
+
+  <!-- Output 1: Lighting Bypass -->
+  <rect x="605" y="15" width="105" height="42" rx="6" fill="#0E2E1E" stroke="#34D399" stroke-width="2"/>
+  <text x="657" y="36" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="11" text-anchor="middle">Lighting Circuit</text>
+  <text x="657" y="50" fill="#34D399" font-family="monospace" font-size="9.5" text-anchor="middle">0s Latency Bypass</text>
+
+  <!-- Output 2: Smart Plugs / Relays -->
+  <rect x="605" y="84" width="105" height="42" rx="6" fill="#312206" stroke="#FBBF24" stroke-width="2"/>
+  <text x="657" y="105" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="11" text-anchor="middle">ESP32 Plugs</text>
+  <text x="657" y="119" fill="#FBBF24" font-family="monospace" font-size="9.5" text-anchor="middle">Peak Delay / Override</text>
+
+  <!-- Output 3: Web Simulator & Telegram -->
+  <rect x="605" y="154" width="105" height="42" rx="6" fill="#0C2538" stroke="#38BDF8" stroke-width="2"/>
+  <text x="657" y="175" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="11" text-anchor="middle">Simulator UI</text>
+  <text x="657" y="189" fill="#38BDF8" font-family="monospace" font-size="9.5" text-anchor="middle">LKR Prediction</text>
+</svg>`,
     awardBadge: "Semi-Finalist · Spark Challenge 2025–2026",
     simulatorUrl: "https://kavishshanilka.github.io/gridguard/",
     repoUrl: "https://github.com/kavishshanilka/gridguard/",
