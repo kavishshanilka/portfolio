@@ -42,6 +42,7 @@
   <meta name="theme-color" content="#08060F">
 </head>
 <body>
+  <div id="scrollProgress" class="scroll-progress-bar" aria-hidden="true"></div>
 
   <!-- NAVIGATION BAR -->
   <header class="site-header">
@@ -155,11 +156,11 @@
                 </svg>
                 Download CV
               </a>
-              <button class="btn btn-outline btn-lg" data-copy="wimalasiriwaks.23@uom.lk">
+              <button class="btn btn-outline btn-lg" data-copy="wimalasiriwaks.23@uom.lk" title="Click to copy official university email">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
                   <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
                 </svg>
-                Copy Email
+                <span>Copy: wimalasiriwaks.23@uom.lk</span>
               </button>
             </div>
           </div>
@@ -329,9 +330,9 @@
             <div>
               <div class="metric-box-card">
                 <div class="metric-big-number">> 30%</div>
-                <div class="metric-title">Peak Tariff & Bill Reduction</div>
+                <div class="metric-title">Peak Tariff & Bill Reduction <span class="card-metric-tag">Simulated Result</span></div>
                 <p class="metric-detail">
-                  Demonstrated via autonomous peak load-shifting, delta-P load identification, and whole-home power scheduling on the interactive simulator.
+                  Validated via mathematical modeling of the Sri Lankan CEB Time-of-Use tariff structure and real-time interactive web simulation of residential appliance shifting.
                 </p>
 
                 <!-- Technical Decoupled System Architecture Block Diagram -->
@@ -425,29 +426,40 @@
         <div class="project-filters">
           <button class="filter-btn active" data-filter="all">All Domains <span class="filter-badge">4</span></button>
           <button class="filter-btn" data-filter="power">Power & Energy <span class="filter-badge">2</span></button>
-          <button class="filter-btn" data-filter="iot">Embedded IoT <span class="filter-badge">2</span></button>
           <button class="filter-btn" data-filter="control">Control & Simulation <span class="filter-badge">1</span></button>
-          <button class="filter-btn" data-filter="hardware">Discrete Hardware <span class="filter-badge">1</span></button>
+          <button class="filter-btn" data-filter="hardware">Discrete Hardware & DSP <span class="filter-badge">1</span></button>
         </div>
 
         <div class="projects-grid">
           
-          <!-- GridGuard Project Card: Streamlined Engineering Spec -->
-          <article class="project-card" data-category="power iot" data-project-id="gridguard">
+          <!-- GridGuard Project Card: Flagship Spec Sheet with Plain-Language Hook -->
+          <article class="project-card" data-category="power" data-project-id="gridguard">
             <div class="project-visual">
               <img src="assets/images/projects/gridguard-sim.png" alt="GridGuard Real-Time Simulator Dashboard" class="project-real-img">
               <div class="project-visual-gradient"></div>
-              <span class="project-category-badge" style="border-color: #A855F7; color: #FFFFFF; background: rgba(124, 58, 237, 0.55);">★ Spark Challenge Semi-Finalist</span>
+              <span class="project-category-badge" style="border-color: #A855F7; color: #FFFFFF; background: rgba(124, 58, 237, 0.65);">★ Flagship System · Spark Challenge Semi-Finalist</span>
             </div>
 
             <div class="project-body">
               <h3 class="project-title">GridGuard — Autonomous Demand-Response System</h3>
               <div class="project-tagline">Decentralized Peak Load-Shifting for Residential & Commercial Distribution Boards</div>
               
+              <p class="project-plain-hook">
+                A smart plug and switch system that flattens national evening peak surges by automatically deferring heavy loads (heaters/kettles) to off-peak hours while keeping lights instantly responsive.
+              </p>
+
+              <div class="card-metric-callout">
+                <span class="card-metric-number">> 30%</span>
+                <div class="card-metric-desc">
+                  Peak Electricity Bill Reduction
+                  <span class="card-metric-tag">Validated on Live Simulator</span>
+                </div>
+              </div>
+
               <div class="project-spec-sheet">
                 <div class="spec-row">
                   <span class="spec-badge problem">PROBLEM</span>
-                  <span class="spec-text">Sri Lanka's evening peak spikes force expensive thermal fossil fuel dispatch, creating steep consumer tariff penalties.</span>
+                  <span class="spec-text">Sri Lanka's evening peak spikes force expensive thermal fossil fuel dispatch, triggering heavy utility tariffs.</span>
                 </div>
                 <div class="spec-row">
                   <span class="spec-badge solution">SOLUTION</span>
@@ -455,7 +467,7 @@
                 </div>
                 <div class="spec-row">
                   <span class="spec-badge impact">IMPACT</span>
-                  <span class="spec-text">> 30% peak cost reduction; zero delay on lighting; real-time LKR billing forecast validated on live web simulator.</span>
+                  <span class="spec-text">> 30% peak tariff cut; 0s delay on lighting circuits; real-time LKR billing forecast validated on live simulator.</span>
                 </div>
               </div>
 
@@ -468,7 +480,7 @@
                   <span class="tech-pill">LKR Forecasting</span>
                 </div>
                 <div class="project-card-actions">
-                  <button class="btn-card-primary" data-open-modal="gridguard">
+                  <button class="btn-card-primary" data-open-modal="gridguard" aria-haspopup="dialog">
                     Case Study
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg>
                   </button>
@@ -485,7 +497,7 @@
             </div>
           </article>
           
-          <!-- APFC Panel: Streamlined Engineering Spec -->
+          <!-- APFC Panel: Spec Sheet with Plain-Language Hook -->
           <article class="project-card" data-category="power" data-project-id="apfc-panel">
             <div class="project-visual">
               <img src="assets/images/projects/apfc-panel.jpg" alt="Smart APFC Hardware Panel" class="project-real-img">
@@ -497,6 +509,18 @@
               <h3 class="project-title">Smart Automatic Power Factor Corrector (APFC) Panel</h3>
               <div class="project-tagline">Closed-Loop Dynamic Capacitor Bank Switching with LabVIEW DAQ</div>
               
+              <p class="project-plain-hook">
+                An industrial power quality panel that monitors inductive motor lag and automatically switches capacitor banks to eliminate low-power-factor utility penalty surcharges.
+              </p>
+
+              <div class="card-metric-callout">
+                <span class="card-metric-number">0.72 → 0.99 PF</span>
+                <div class="card-metric-desc">
+                  Dynamic Power Factor Correction
+                  <span class="card-metric-tag">Hardware Prototype Validated</span>
+                </div>
+              </div>
+
               <div class="project-spec-sheet">
                 <div class="spec-row">
                   <span class="spec-badge problem">PROBLEM</span>
@@ -521,7 +545,7 @@
                   <span class="tech-pill">Capacitor Banks</span>
                 </div>
                 <div class="project-card-actions">
-                  <button class="btn-card-primary" data-open-modal="apfc-panel">
+                  <button class="btn-card-primary" data-open-modal="apfc-panel" aria-haspopup="dialog">
                     Case Study
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg>
                   </button>
@@ -534,7 +558,7 @@
             </div>
           </article>
 
-          <!-- Smart Irrigation Controller: Streamlined Engineering Spec -->
+          <!-- Smart Irrigation Controller: Spec Sheet with Plain-Language Hook -->
           <article class="project-card" data-category="control" data-project-id="smart-irrigation">
             <div class="project-visual">
               <img src="assets/images/projects/smart-irrigation.jpg" alt="Smart Irrigation MATLAB / Simulink Simulation System" class="project-real-img">
@@ -546,6 +570,18 @@
               <h3 class="project-title">Smart Multi-Zone Irrigation Controller</h3>
               <div class="project-tagline">MATLAB / Simulink Dynamic Plant Modeling & Hysteresis Valve Routing</div>
               
+              <p class="project-plain-hook">
+                A closed-loop agricultural hydration system that precisely routes water to depleted soil zones while buffering valves against damaging pipe pressure shocks.
+              </p>
+
+              <div class="card-metric-callout">
+                <span class="card-metric-number">> 25%</span>
+                <div class="card-metric-desc">
+                  Irrigation Water Savings
+                  <span class="card-metric-tag">Simulink Closed-Loop Model</span>
+                </div>
+              </div>
+
               <div class="project-spec-sheet">
                 <div class="spec-row">
                   <span class="spec-badge problem">PROBLEM</span>
@@ -570,7 +606,7 @@
                   <span class="tech-pill">Fault Isolation</span>
                 </div>
                 <div class="project-card-actions">
-                  <button class="btn-card-primary" data-open-modal="smart-irrigation">
+                  <button class="btn-card-primary" data-open-modal="smart-irrigation" aria-haspopup="dialog">
                     Case Study
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg>
                   </button>
@@ -583,7 +619,7 @@
             </div>
           </article>
 
-          <!-- ALII - Discrete Hardware Signal Processor: Streamlined Engineering Spec -->
+          <!-- ALII - Discrete Hardware Signal Processor: Spec Sheet with Plain-Language Hook -->
           <article class="project-card" data-category="hardware" data-project-id="alii-processor">
             <div class="project-visual">
               <img src="assets/images/projects/alii-hardware.jpg" alt="ALII Discrete Hardware Signal Processor" class="project-real-img">
@@ -595,6 +631,18 @@
               <h3 class="project-title">Advanced Light Intensity Indicator (ALII)</h3>
               <div class="project-tagline">Discrete Digital Hardware Signal Processor without Microcontrollers</div>
               
+              <p class="project-plain-hook">
+                A pure discrete electronic processor that computes long-window moving averages of ambient light with zero firmware latency and complete immunity to digital clock jitter.
+              </p>
+
+              <div class="card-metric-callout">
+                <span class="card-metric-number">300–900s</span>
+                <div class="card-metric-desc">
+                  Windowed Hardware Integration
+                  <span class="card-metric-tag">Hardware Discrete Signal Path</span>
+                </div>
+              </div>
+
               <div class="project-spec-sheet">
                 <div class="spec-row">
                   <span class="spec-badge problem">PROBLEM</span>
@@ -618,7 +666,7 @@
                   <span class="tech-pill">Flip-Flop Counters</span>
                 </div>
                 <div class="project-card-actions">
-                  <button class="btn-card-primary" data-open-modal="alii-processor">
+                  <button class="btn-card-primary" data-open-modal="alii-processor" aria-haspopup="dialog">
                     Case Study
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg>
                   </button>
@@ -1057,8 +1105,8 @@
                     </svg>
                   </div>
                   <div>
-                    <div class="contact-tile-type">University Email</div>
-                    <div class="contact-tile-val">wimalasiriwaks.23@uom.lk</div>
+                    <div class="contact-tile-type">Official University Email (UoM ID)</div>
+                    <div class="contact-tile-val">wimalasiriwaks.23@uom.lk <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 500;">(K.S. Wimalasiri · Electrical Eng '23)</span></div>
                   </div>
                 </div>
                 <button class="copy-btn" data-copy="wimalasiriwaks.23@uom.lk" title="Copy email address">Copy</button>

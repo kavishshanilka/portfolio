@@ -17,11 +17,20 @@ function initNavbar() {
   const drawer = document.querySelector('.mobile-drawer');
   const drawerLinks = document.querySelectorAll('.mobile-nav-link');
 
+  const progressBar = document.getElementById('scrollProgress');
+
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
+    const scrollY = window.scrollY;
+    if (scrollY > 40) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
+    }
+
+    if (progressBar) {
+      const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = (scrollY / docHeight) * 100;
+      progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
     }
   }, { passive: true });
 

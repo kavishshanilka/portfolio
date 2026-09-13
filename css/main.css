@@ -2154,3 +2154,64 @@ img {
   align-items: center;
   gap: 8px;
 }
+
+/* Scroll progress indicator bar */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #7C3AED, #A855F7, #38BDF8);
+  z-index: 9999;
+  transition: width 0.08s ease-out;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.8);
+}
+
+/* Card Visual Metric Callout Box */
+.card-metric-callout {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(124, 58, 237, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  margin: 10px 0 14px 0;
+}
+
+.card-metric-number {
+  font-family: var(--font-mono);
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: #38BDF8;
+  white-space: nowrap;
+}
+
+.card-metric-desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.35;
+}
+
+.card-metric-tag {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-family: var(--font-mono);
+  color: #A855F7;
+  font-weight: 600;
+  background: rgba(168, 85, 247, 0.15);
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+/* Plain-Language Project Hook */
+.project-plain-hook {
+  font-size: 0.98rem;
+  color: #E2E8F0;
+  line-height: 1.55;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  border-left: 3px solid var(--accent-primary);
+}
