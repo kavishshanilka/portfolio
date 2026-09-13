@@ -332,66 +332,6 @@
                   Validated via mathematical modeling of the Sri Lankan CEB Time-of-Use tariff structure and real-time interactive web simulation of residential appliance shifting.
                 </p>
 
-                <!-- Technical Decoupled System Architecture Block Diagram -->
-                <div class="schematic-diagram" style="padding: 16px; background: rgba(10, 7, 18, 0.95); border: 1px solid var(--border-medium); border-radius: var(--radius-md);">
-                  <div style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent-light); font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                    DECOUPLED ARCHITECTURE & DISAGGREGATION FLOW
-                  </div>
-                  <svg viewBox="0 0 460 170" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto;">
-                    <!-- Grid AC In -->
-                    <rect x="8" y="55" width="82" height="48" rx="6" fill="#151020" stroke="#7C3AED" stroke-width="1.8"/>
-                    <text x="49" y="76" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="11" text-anchor="middle">230V AC Mains</text>
-                    <text x="49" y="92" fill="#D8B4FE" font-family="monospace" font-size="9" text-anchor="middle">50 Hz Utility</text>
-
-                    <!-- Arrow to Meter -->
-                    <line x1="90" y1="79" x2="114" y2="79" stroke="#A855F7" stroke-width="2"/>
-                    <polygon points="114,76 120,79 114,82" fill="#A855F7"/>
-
-                    <!-- Main PZEM Meter -->
-                    <rect x="120" y="50" width="94" height="58" rx="6" fill="#1E1435" stroke="#A855F7" stroke-width="2"/>
-                    <text x="167" y="72" fill="#38BDF8" font-family="sans-serif" font-weight="800" font-size="11" text-anchor="middle">PZEM-004T</text>
-                    <text x="167" y="86" fill="#FFFFFF" font-family="monospace" font-size="9.5" text-anchor="middle">Single DB Meter</text>
-                    <text x="167" y="99" fill="#94A3B8" font-family="monospace" font-size="8.5" text-anchor="middle">V, I, P, PF</text>
-
-                    <!-- Arrow to RPi -->
-                    <line x1="214" y1="79" x2="238" y2="79" stroke="#A855F7" stroke-width="2"/>
-                    <polygon points="238,76 244,79 238,82" fill="#A855F7"/>
-
-                    <!-- Central RPi Controller -->
-                    <rect x="244" y="32" width="112" height="94" rx="8" fill="#251648" stroke="#D8B4FE" stroke-width="2.2"/>
-                    <text x="300" y="55" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="12" text-anchor="middle">Raspberry Pi Hub</text>
-                    <text x="300" y="73" fill="#FBBF24" font-family="monospace" font-weight="700" font-size="9.5" text-anchor="middle">&#916;P Disaggregation</text>
-                    <text x="300" y="89" fill="#38BDF8" font-family="monospace" font-size="9" text-anchor="middle">Peak Shift Policy</text>
-                    <text x="300" y="105" fill="#34D399" font-family="monospace" font-size="8.5" text-anchor="middle">LKR Tariff Engine</text>
-
-                    <!-- Arrows to Outputs -->
-                    <path d="M356 55 H378 V26 H390" stroke="#34D399" stroke-width="1.8"/>
-                    <polygon points="390,23 396,26 390,29" fill="#34D399"/>
-
-                    <path d="M356 79 H390" stroke="#FBBF24" stroke-width="1.8"/>
-                    <polygon points="390,76 396,79 390,82" fill="#FBBF24"/>
-
-                    <path d="M356 103 H378 V134 H390" stroke="#38BDF8" stroke-width="1.8"/>
-                    <polygon points="390,131 396,134 390,137" fill="#38BDF8"/>
-
-                    <!-- Lighting Bypass -->
-                    <rect x="396" y="10" width="58" height="34" rx="5" fill="#0E2E1E" stroke="#34D399" stroke-width="1.6"/>
-                    <text x="425" y="26" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="9.5" text-anchor="middle">Lights</text>
-                    <text x="425" y="38" fill="#34D399" font-family="monospace" font-size="8" text-anchor="middle">0s Delay</text>
-
-                    <!-- Heavy Load Delay -->
-                    <rect x="396" y="62" width="58" height="34" rx="5" fill="#312206" stroke="#FBBF24" stroke-width="1.6"/>
-                    <text x="425" y="78" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="9.5" text-anchor="middle">Heaters/AC</text>
-                    <text x="425" y="90" fill="#FBBF24" font-family="monospace" font-size="8" text-anchor="middle">Peak Delay</text>
-
-                    <!-- Web / Simulator -->
-                    <rect x="396" y="117" width="58" height="34" rx="5" fill="#0C2538" stroke="#38BDF8" stroke-width="1.6"/>
-                    <text x="425" y="133" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="9.5" text-anchor="middle">Web UI</text>
-                    <text x="425" y="145" fill="#38BDF8" font-family="monospace" font-size="8" text-anchor="middle">Live Sim</text>
-                  </svg>
-                </div>
-
                 <!-- Live Simulator Interface Preview Bar -->
                 <div style="margin-top: 16px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-medium); background: #08060F;">
                   <div style="background: rgba(14, 10, 24, 0.95); padding: 8px 14px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-subtle);">
@@ -453,21 +393,6 @@
                 </div>
               </div>
 
-              <div class="project-spec-sheet">
-                <div class="spec-row">
-                  <span class="spec-badge problem">PROBLEM</span>
-                  <span class="spec-text">Sri Lanka's evening peak spikes force expensive thermal fossil fuel dispatch, triggering heavy utility tariffs.</span>
-                </div>
-                <div class="spec-row">
-                  <span class="spec-badge solution">SOLUTION</span>
-                  <span class="spec-text">Decoupled topology: 1 main DB PZEM meter + unmetered ESP32 switch nodes + central &#916;P surge disaggregation & 1-tap user override.</span>
-                </div>
-                <div class="spec-row">
-                  <span class="spec-badge impact">IMPACT</span>
-                  <span class="spec-text">> 30% peak tariff cut; 0s delay on lighting circuits; real-time LKR billing forecast validated on live simulator.</span>
-                </div>
-              </div>
-
               <div class="project-footer">
                 <div class="tech-pills-row" style="margin-bottom: 0;">
                   <span class="tech-pill">Raspberry Pi</span>
@@ -518,21 +443,6 @@
                 </div>
               </div>
 
-              <div class="project-spec-sheet">
-                <div class="spec-row">
-                  <span class="spec-badge problem">PROBLEM</span>
-                  <span class="spec-text">Inductive loads in industrial facilities cause severe lagging power factor (PF &lt; 0.8), triggering high utility surcharges.</span>
-                </div>
-                <div class="spec-row">
-                  <span class="spec-badge solution">SOLUTION</span>
-                  <span class="spec-text">CT/VT zero-crossing phase angle tracking, staged relay capacitor bank actuation, and NI DAQ instrumentation cockpit.</span>
-                </div>
-                <div class="spec-row">
-                  <span class="spec-badge impact">IMPACT</span>
-                  <span class="spec-text">Corrected PF from 0.72 lagging to 0.98–1.00; real-time Telegram bot safety alerts and OLED status telemetry.</span>
-                </div>
-              </div>
-
               <div class="project-footer">
                 <div class="tech-pills-row" style="margin-bottom: 0;">
                   <span class="tech-pill">LabVIEW</span>
@@ -579,21 +489,6 @@
                 </div>
               </div>
 
-              <div class="project-spec-sheet">
-                <div class="spec-row">
-                  <span class="spec-badge problem">PROBLEM</span>
-                  <span class="spec-text">Unregulated irrigation causes substantial water depletion and severe pump wear from continuous chattering cycles.</span>
-                </div>
-                <div class="spec-row">
-                  <span class="spec-badge solution">SOLUTION</span>
-                  <span class="spec-text">Nonlinear hydraulic reservoir modeling with dual-band hysteresis control, multi-zone moisture routing, and fault isolation.</span>
-                </div>
-                <div class="spec-row">
-                  <span class="spec-badge impact">IMPACT</span>
-                  <span class="spec-text">> 25% reduction in irrigation water waste; verified protection against hydraulic water hammer in pipeline networks.</span>
-                </div>
-              </div>
-
               <div class="project-footer">
                 <div class="tech-pills-row" style="margin-bottom: 0;">
                   <span class="tech-pill">MATLAB</span>
@@ -637,21 +532,6 @@
                 <div class="card-metric-desc">
                   Windowed Hardware Integration
                   <span class="card-metric-tag">Hardware Discrete Signal Path</span>
-                </div>
-              </div>
-
-              <div class="project-spec-sheet">
-                <div class="spec-row">
-                  <span class="spec-badge problem">PROBLEM</span>
-                  <span class="spec-text">Microcontroller ADC quantization noise, interrupt latency, and firmware overhead in deterministic analog tone monitoring.</span>
-                </div>
-                <div class="spec-row">
-                  <span class="spec-badge solution">SOLUTION</span>
-                  <span class="spec-text">Active Sallen-Key analog bandpass filters rejecting 50/100 Hz mains ripple, flip-flop registers, and discrete counter logic.</span>
-                </div>
-                <div class="spec-row">
-                  <span class="spec-badge impact">IMPACT</span>
-                  <span class="spec-text">Real-time light signal averaging across 300–900 s windows with pure deterministic hardware timing and zero software delay.</span>
                 </div>
               </div>
 
@@ -742,8 +622,6 @@
                 <span class="skill-badge">Digital Signal Processing (DSP)</span>
                 <span class="skill-badge">Closed-Loop Plant Dynamics</span>
                 <span class="skill-badge">Hysteresis Controller Logic</span>
-                <span class="skill-badge">Harmonic Filtering (50-100Hz)</span>
-                <span class="skill-badge">Time-Windowed Averaging</span>
               </div>
             </div>
 
@@ -796,11 +674,8 @@
               </div>
               <div class="skill-tags-list">
                 <span class="skill-badge">Technical Leadership</span>
-                <span class="skill-badge">Team Collaboration</span>
                 <span class="skill-badge">Project Management</span>
-                <span class="skill-badge">Analytical Problem Solving</span>
-                <span class="skill-badge">English (Professional)</span>
-                <span class="skill-badge">Sinhala (Native)</span>
+                <span class="skill-badge">Team Collaboration</span>
               </div>
             </div>
 

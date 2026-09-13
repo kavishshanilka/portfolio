@@ -2295,3 +2295,45 @@ img {
   transform: translateY(-2px);
   box-shadow: 0 4px 14px rgba(124, 58, 237, 0.45);
 }
+
+/* Compact Featured GridGuard Card Styling */
+.featured-card {
+  padding: 36px 36px 32px 36px !important;
+  margin-bottom: 44px !important;
+}
+
+.featured-grid {
+  gap: 36px !important;
+  align-items: center !important;
+}
+
+@media (max-width: 900px) {
+  .featured-card {
+    padding: 24px 20px !important;
+  }
+}
+
+/* Compact Project Cards */
+.project-body {
+  padding: 22px 24px !important;
+}
+
+.project-plain-hook {
+  font-size: 0.94rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 10px !important;
+}
+
+.card-metric-callout {
+  padding: 6px 12px !important;
+  margin: 8px 0 14px 0 !important;
+}
+
+/* Skill Domain Cards Balanced Height */
+.skill-domain-card {
+  padding: 22px 22px 20px 22px !important;
+}
+
+.skill-tags-list {
+  gap: 8px !important;
+}
