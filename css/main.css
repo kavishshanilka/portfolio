@@ -2215,3 +2215,20 @@ img {
   padding-left: 10px;
   border-left: 3px solid var(--accent-primary);
 }
+
+/* Static Case Study Accessibility & Crawler Visibility */
+.static-case-studies-wrap {
+  display: none;
+}
+
+.case-study-article {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.case-study-cta-bar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 16px 0 24px 0;
+}

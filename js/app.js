@@ -235,6 +235,7 @@ function initModals() {
 
   document.querySelectorAll('[data-open-modal]').forEach(trigger => {
     trigger.addEventListener('click', (e) => {
+      e.preventDefault();
       e.stopPropagation();
       const id = trigger.getAttribute('data-open-modal');
       openProjectModal(id);
