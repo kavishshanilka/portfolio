@@ -1,0 +1,14 @@
+﻿# Raw original photos & temp files
+potos/
+dp.jpeg
+new dp.jpg
+right.png
+file_2025-04-09_15.15.51.png
+WhatsApp Image 2025-05-02 at 15.41.00_7ad6e3c6.jpg
+cv.pdf
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
