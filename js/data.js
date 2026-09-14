@@ -283,11 +283,11 @@ const PORTFOLIO_DATA = {
     },
     {
       role: "Senior Member – Public Relations Pillar",
-      organization: "Institution of Engineers Sri Lanka (IESL) Young Members Section",
+      organization: "Institution of Engineers Sri Lanka (IESL) Student Chapter – University of Moratuwa",
       location: "Moratuwa, Sri Lanka",
       period: "2026 – 2027",
       type: "Administrative Committee",
-      description: "Appointed to the 2026/2027 Administrative Committee of the IESL Young Members Section as a Senior Member of the Public Relations Pillar. Leading national digital outreach frameworks, public relations strategy, and high-impact industry communication channels connecting young engineers and undergraduates with professional engineering practice.",
+      description: "Appointed to the 2026/2027 Administrative Committee of the IESL Student Chapter – University of Moratuwa as a Senior Member of the Public Relations Pillar. Leading national digital outreach frameworks, public relations strategy, and high-impact industry communication channels connecting young engineers and undergraduates with professional engineering practice.",
       highlights: [
         "Elected / appointed to the Administrative Committee 2026/2027.",
         "Directing PR and digital engagement across national student and young member chapters.",
