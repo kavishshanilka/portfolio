@@ -369,10 +369,10 @@ const PORTFOLIO_DATA = {
   ],
 
   reference: {
-    name: "Prof. Logeeshan Velmanickam",
-    title: "Senior Lecturer",
+    name: "Available upon request",
+    title: "Academic & Professional Referees",
     department: "Department of Electrical Engineering",
     institution: "University of Moratuwa, Sri Lanka",
-    email: "logeeshanv@uom.lk"
+    email: ""
   }
 };
