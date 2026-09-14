@@ -3,7 +3,7 @@
 > **Electrical Engineering Undergraduate | University of Moratuwa**
 > Building intelligent systems at the intersection of power electronics, embedded hardware, and automation.
 
-🌐 **Live Website**: [https://kavishshanilka.github.io](https://kavishshanilka.github.io/portfolio/)
+🌐 **Live Website**: [https://kavishshanilka.github.io/portfolio/](https://kavishshanilka.github.io/portfolio/)
 
 ---
 
