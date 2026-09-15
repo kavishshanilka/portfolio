@@ -1443,22 +1443,20 @@ img {
 
 /* EXPERIENCE & LEADERSHIP */
 .experience-layout {
-  display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
-  gap: 36px;
-  align-items: start;
-}
-
-@media (max-width: 960px) {
-  .experience-layout {
-    grid-template-columns: 1fr;
-  }
+  width: 100%;
 }
 
 .experience-list {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .experience-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 .exp-card {
@@ -2362,6 +2360,7 @@ img {
 }
 
 .exp-card-featured {
+  grid-column: 1 / -1;
   background: linear-gradient(135deg, rgba(26, 18, 42, 0.95) 0%, rgba(14, 10, 24, 0.95) 100%);
   border-color: var(--border-bright);
   box-shadow: 0 10px 30px -10px rgba(124, 58, 237, 0.3);
