@@ -319,6 +319,18 @@ const PORTFOLIO_DATA = {
       ]
     },
     {
+      role: "Editorial & Marketing Team Member",
+      organization: "Electrical Engineering Society (EESOC), University of Moratuwa",
+      location: "Moratuwa, Sri Lanka",
+      period: "2025 – Present",
+      type: "Departmental Society Leadership",
+      description: "Contributing to departmental editorial publications, social media campaign artwork, and promotional strategies for flagship EESOC events.",
+      highlights: [
+        "Coordinating visual communication and graphic design assets for flagship departmental events.",
+        "Contributing to editorial releases and cross-batch academic publications."
+      ]
+    },
+    {
       role: "Project Chair – Project HOPE",
       organization: "Leo Club",
       location: "Sri Lanka",
@@ -369,10 +381,13 @@ const PORTFOLIO_DATA = {
   ],
 
   reference: {
-    name: "Available upon request",
-    title: "Academic & Professional Referees",
+    name: "Sen. Prof. Anura Wijayapala",
+    title: "Senior Professor",
     department: "Department of Electrical Engineering",
     institution: "University of Moratuwa, Sri Lanka",
-    email: ""
+    email: "anuraw@uom.lk",
+    phone: "+94112650625 Ext: 3212",
+    mobile: "+94718178975",
+    fax: "+94112651787"
   }
 };
