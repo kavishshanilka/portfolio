@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="css/main.css?v=7">
+  <link rel="stylesheet" href="css/main.css?v=8">
   
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="assets/images/hero-kavish.jpg">
@@ -115,7 +115,7 @@
             <h1 class="hero-name">Kavish Shanilka</h1>
 
             <p class="hero-headline">
-              Building intelligent systems at the intersection of power, embedded hardware and automation.
+              I build physical systems that make electrical infrastructure smarter, cheaper, and more reliable.
             </p>
 
             <p class="hero-bio">
@@ -378,18 +378,19 @@
             </div>
 
             <div class="project-body">
-              <h3 class="project-title">GridGuard — Autonomous Demand-Response System</h3>
-              <div class="project-tagline">Decentralized Peak Load-Shifting for Residential & Commercial Distribution Boards</div>
+              <h3 class="project-title">GridGuard — Autonomous Demand-Response</h3>
+              <div class="project-tagline">Decentralized Edge Load-Shifting for Residential Distribution Boards</div>
               
-              <p class="project-plain-hook">
-                A smart plug and switch system that flattens national evening peak surges by automatically deferring heavy loads (heaters/kettles) to off-peak hours while keeping lights instantly responsive.
-              </p>
+              <div class="project-summary-box">
+                <p><strong>Problem:</strong> High evening peak electricity tariffs and costly fossil fuel generation strain national grid stability.</p>
+                <p><strong>Built:</strong> Decoupled IoT system pairing a central DB power meter with cheap ESP32 plugs to detect and defer heavy loads.</p>
+              </div>
 
               <div class="card-metric-callout">
                 <span class="card-metric-number">> 30%</span>
                 <div class="card-metric-desc">
                   Peak Electricity Bill Reduction
-                  <span class="card-metric-tag">Validated on Live Simulator</span>
+                  <span class="card-metric-tag">Validated on Physical & Web Sim</span>
                 </div>
               </div>
 
@@ -428,18 +429,19 @@
             </div>
 
             <div class="project-body">
-              <h3 class="project-title">Smart Automatic Power Factor Corrector (APFC) Panel</h3>
-              <div class="project-tagline">Closed-Loop Dynamic Capacitor Bank Switching with LabVIEW DAQ</div>
+              <h3 class="project-title">Smart Automatic Power Factor Corrector (APFC)</h3>
+              <div class="project-tagline">Closed-Loop Dynamic Capacitor Switching & DAQ Telemetry</div>
               
-              <p class="project-plain-hook">
-                An industrial power quality panel that monitors inductive motor lag and automatically switches capacitor banks to eliminate low-power-factor utility penalty surcharges.
-              </p>
+              <div class="project-summary-box">
+                <p><strong>Problem:</strong> Industrial inductive motor loads cause severe phase lag, wasting line capacity and incurring heavy CEB utility surcharge penalties.</p>
+                <p><strong>Built:</strong> An autonomous closed-loop panel pairing analogue CT/VT zero-crossing detection with multi-stage relay-driven capacitor bank switching.</p>
+              </div>
 
               <div class="card-metric-callout">
                 <span class="card-metric-number">0.72 → 0.99 PF</span>
                 <div class="card-metric-desc">
-                  Dynamic Power Factor Correction
-                  <span class="card-metric-tag">Hardware Prototype Validated</span>
+                  Corrected in under 2.5s
+                  <span class="card-metric-tag">Validated on Physical Test Bench</span>
                 </div>
               </div>
 
@@ -475,17 +477,18 @@
 
             <div class="project-body">
               <h3 class="project-title">Smart Multi-Zone Irrigation Controller</h3>
-              <div class="project-tagline">MATLAB / Simulink Dynamic Plant Modeling & Hysteresis Valve Routing</div>
+              <div class="project-tagline">Dynamic Plant Modeling & Hysteresis Valve Routing in Simulink</div>
               
-              <p class="project-plain-hook">
-                A closed-loop agricultural hydration system that precisely routes water to depleted soil zones while buffering valves against damaging pipe pressure shocks.
-              </p>
+              <div class="project-summary-box">
+                <p><strong>Problem:</strong> Agricultural irrigation wastes excessive water through uniform spraying and destroys solenoid valves via rapid pressure cycling.</p>
+                <p><strong>Built:</strong> Dynamic closed-loop plant simulation with non-linear hysteresis routing that buffers pipe pressure and isolates zone leaks.</p>
+              </div>
 
               <div class="card-metric-callout">
                 <span class="card-metric-number">> 25%</span>
                 <div class="card-metric-desc">
-                  Irrigation Water Savings
-                  <span class="card-metric-tag">Simulink Closed-Loop Model</span>
+                  Water Volume Saved
+                  <span class="card-metric-tag">Validated via Closed-Loop Simulation</span>
                 </div>
               </div>
 
@@ -521,17 +524,18 @@
 
             <div class="project-body">
               <h3 class="project-title">Advanced Light Intensity Indicator (ALII)</h3>
-              <div class="project-tagline">Discrete Digital Hardware Signal Processor without Microcontrollers</div>
+              <div class="project-tagline">Hardware Signal Processor without Microcontrollers or Firmware</div>
               
-              <p class="project-plain-hook">
-                A pure discrete electronic processor that computes long-window moving averages of ambient light with zero firmware latency and complete immunity to digital clock jitter.
-              </p>
+              <div class="project-summary-box">
+                <p><strong>Problem:</strong> Standard MCU light meters freeze during firmware crashes, clock jitter, or electrical noise in harsh environments.</p>
+                <p><strong>Built:</strong> Pure discrete analog/digital hardware pipeline using active Sallen-Key filters and flip-flop counters to compute long moving averages.</p>
+              </div>
 
               <div class="card-metric-callout">
                 <span class="card-metric-number">300–900s</span>
                 <div class="card-metric-desc">
-                  Windowed Hardware Integration
-                  <span class="card-metric-tag">Hardware Discrete Signal Path</span>
+                  Pure Hardware Moving Average
+                  <span class="card-metric-tag">Zero Firmware Latency</span>
                 </div>
               </div>
 
@@ -935,11 +939,9 @@
                   Senior Professor · Department of Electrical Engineering<br>
                   University of Moratuwa, Sri Lanka<br>
                   <div style="margin-top: 8px; display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.92rem;">
-                    <span>Email: <a href="mailto:anuraw@uom.lk" style="color: var(--text-accent); font-family: var(--font-mono); font-weight: 600;">anuraw@uom.lk</a></span>
+                    <span>Official Email: <a href="mailto:anuraw@uom.lk" style="color: var(--text-accent); font-family: var(--font-mono); font-weight: 600;">anuraw@uom.lk</a></span>
                     <span style="color: var(--text-muted);">|</span>
-                    <span style="color: var(--text-secondary);">Phone: +94 11 265 0625 Ext: 3212</span>
-                    <span style="color: var(--text-muted);">|</span>
-                    <span style="color: var(--text-secondary);">Mobile: +94 71 817 8975</span>
+                    <span style="color: var(--text-secondary);">Direct phone contact provided upon request or in CV</span>
                   </div>
                 </div>
               </div>
