@@ -1292,89 +1292,6 @@ img {
   color: #FFFFFF;
 }
 
-/* SKILLS SECTION */
-.skills-wrapper {
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-xl);
-  padding: 48px;
-  box-shadow: var(--shadow-card);
-}
-
-@media (max-width: 768px) {
-  .skills-wrapper {
-    padding: 26px;
-  }
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-}
-
-.skill-domain-card {
-  background: rgba(14, 10, 24, 0.88);
-  border: 1px solid var(--border-medium);
-  border-radius: var(--radius-md);
-  padding: 26px;
-  transition: all var(--transition-fast);
-}
-
-.skill-domain-card:hover {
-  border-color: var(--border-bright);
-  background: rgba(14, 10, 24, 1);
-  transform: translateY(-3px);
-}
-
-.domain-header {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 20px;
-}
-
-.domain-icon-box {
-  width: 44px;
-  height: 44px;
-  background: var(--accent-soft);
-  border: 1px solid var(--border-medium);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-accent);
-}
-
-.domain-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-.skill-tags-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skill-badge {
-  font-size: 0.92rem;
-  font-family: var(--font-mono);
-  font-weight: 600;
-  background: var(--bg-card);
-  border: 1px solid var(--border-medium);
-  color: var(--text-primary);
-  padding: 7px 14px;
-  border-radius: var(--radius-sm);
-  transition: all var(--transition-fast);
-}
-
-.skill-badge:hover {
-  background: var(--accent-primary);
-  border-color: var(--border-bright);
-  color: #FFFFFF;
-}
-
 /* EDUCATION TIMELINE */
 .timeline-container {
   max-width: 860px;
@@ -2388,14 +2305,6 @@ img {
   margin: 8px 0 14px 0 !important;
 }
 
-/* Skill Domain Cards Balanced Height */
-.skill-domain-card {
-  padding: 22px 22px 20px 22px !important;
-}
-
-.skill-tags-list {
-  gap: 8px !important;
-}
 
 /* LEADERSHIP CARDS ENHANCEMENT */
 .exp-role-wrap {
