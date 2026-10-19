@@ -21,12 +21,12 @@ const PORTFOLIO_DATA = {
     tagline: "Building intelligent systems at the intersection of power, embedded hardware and automation.",
     aboutBio: "Electrical engineering undergraduate at the University of Moratuwa passionate about research, intelligent systems, embedded hardware, and power electronics. Currently serving as Co-Director of Club Service at Rotaract Alumni University of Moratuwa and an active Rotaractor Award recipient at Rotaract Club of University of Moratuwa.",
     areasOfInterest: [
-      "Power Electronics",
+      "Power Systems",
+      "Electronics & Circuits",
+      "Internet of Things (IoT)",
+      "Machine Learning",
       "Embedded Systems",
-      "Autonomous Systems",
-      "Digital Signal Processing",
-      "IoT",
-      "Robotics"
+      "Graphic & UI Design"
     ]
   },
 
